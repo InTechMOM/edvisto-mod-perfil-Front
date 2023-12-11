@@ -1,0 +1,497 @@
+
+:root{
+    --violet: #6100FF;
+    --tech: #0B0033;
+    --orange: #FF7000;
+    --caribe70: hsla(183, 75%, 44%, 0.7);
+    --white80: hsla(0, 0%, 100%, 0.8);
+    --caribe: hsla(183, 75%, 44%, 1);
+    --caribe30:  hsla(183, 75%, 44%, 0.3);
+    width: 100%;
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+    }
+  
+body{
+    width: 100%;
+    margin:0px;
+    font-family: 'Urbanist', sans-serif;
+    text-align: center;   
+    margin:0; 
+}
+
+/* Header */
+nav.header {
+    background: var(--caribe30);
+    block-size: 143.18px;
+    display: flex;
+    justify-content: space-between; 
+    overflow: hidden;
+    align-items: center;
+}
+
+.logo-edvisto{
+    padding-left: 97px;
+}
+.user-sesion{
+    display:flex;
+    align-items: center;
+}
+
+#modulo{
+    display: flex;
+    font-size: 24px;
+    font-weight:500;
+    color: var(--tech);
+    width: max-content;
+}
+
+.perfil-circular {
+    width: 60px;  
+    height: 60px;
+    border-radius: 50%; 
+    background-color: #d1d1d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+  }
+
+  .profile1 {
+    display: flex;
+    margin-right: 94px;
+}
+
+.container{
+    width: 95%;
+}
+
+.profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 262px;
+    /* width: 100%; */
+}
+
+.profile-image {
+    align-self: center;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.profile-menu-button {
+    align-self: center;
+}
+
+.profile-menu-button img{
+    cursor:pointer;
+}
+
+.user-menu{
+    overflow: hidden;
+}
+
+.menu-desplegable { 
+    position: absolute;
+    top: 143.17px; 
+    right: 0; 
+    background-color: var(--caribe30);
+    padding: 0px;
+    z-index: 1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.menu-desplegable ul{
+    padding-left: 0%;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.menu-desplegable li{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    padding-right: 0px;
+    width: 180px;
+}
+
+.menu-miperfil{
+    padding-right: 30px;
+    align-items: end;
+    display: flex;
+    height: 25px;
+    width: 230px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.hidden {
+    display: none;
+}
+
+#unoPerfil{
+    border-bottom:1px solid var(--tech);
+}
+
+#tresSalir{
+    height: 25px;
+    border-radius: 0px 0px 0px 10px;
+}
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.both-blocks{
+    width: 100%;
+    display: flex;
+    background-image: url(../img/frame-mac.svg);
+    background-size: auto;
+}
+
+/*Bloque Formulario*/
+.block-personal-information{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 27px;
+    margin-left:56px;
+    width: 50%;
+}
+
+.informacion-personal{
+    width: 231px;
+    height: 39px;
+    display: inline;
+    text-align: center;
+    padding: 20px 100px 20px 100px;
+    margin: 5px 74px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: auto;
+    flex-basis:auto;
+    margin-left:12px;
+    border-radius: 28px;
+    background: var(--white80);
+    box-shadow: 4px 4px 3px 0px rgba(40, 0, 105, 0.29);
+    
+}
+
+.form{
+    margin-left: inherit
+}
+
+.tittle{
+    color: #0B0033;
+    font-family: Urbanist;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 375px;
+    margin-top:90px;
+    margin-bottom: 0px;
+}
+
+.tittle-input{
+    color: #0B0033;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    display:flex;
+}
+
+input{
+    display: flex; 
+    height: 2.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 10px;
+    border: 2px solid #0B0033;
+    background: #FFF;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.input-name{
+    width: 28.75rem;
+}
+
+.input-last-name{
+    width: 28.75rem;
+}
+
+#mail_usuario{
+    width: 28.75rem;
+}
+
+.input-date{
+    width: 25rem;
+    flex-direction: row;
+    align-items: center;
+    font-family: Inter;
+    padding-inline-end: 5px
+}
+
+#country{
+    width: 20rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    border: 2px solid #0B0033;
+    background: rgba(255, 255, 255, 0.80);
+    display: flex;
+}
+
+#selector-grade{
+    width:15rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    border: 2px solid #0B0033;
+    background: rgba(255, 255, 255, 0.80);
+    margin-bottom: 20px;
+    display:flex;
+}
+
+
+
+.legend{
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color:#FF0060;
+    margin-left: 0px;
+    display: flex;
+}
+
+/*Bloque foto de perfil/Avatar */
+.block-profile-photo{
+    width: 50%;
+}
+
+.container {
+    position: relative;
+}
+.content-profile-block{
+    width: 75%;
+    height: 440px;
+    display: flex;
+    justify-content: center;
+    padding: 50px 40px;
+    margin-top: 90px;
+    flex-direction: column;
+    align-items: center;
+    gap: 23px;
+    border-radius: 20px;
+    border: 0px solid var(--Tech, #0B0033);
+    background: var(--Azul-Profundo, #0B0033);
+}
+
+.avatar-card{
+    position: absolute;
+    z-index: 1;
+    width: 156.623px;
+    height: 170.044px;
+    flex-shrink: 0;
+}
+
+.datos-estudiante{
+    align-content: center;
+    color: #FFF;
+    text-align: center;
+    font-family: Urbanist;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/*Botones*/
+.buttons{
+    height: 20em;
+    width: 100%;
+    display:flex;
+    margin-left: 50px;
+}
+
+.buttons-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submit{
+    display: flex;
+    width: 175px;
+    height: 24px;
+    padding: 12px;
+    color:white;
+    background: var(--violet);
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-left:auto;
+    text-align: center;
+    font-family: Urbanist;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 1px;    
+    margin-bottom: 62px;
+    cursor:pointer;
+}
+
+.reset{
+    width: 151px;
+    height: 24px;
+    padding: 12px;
+    border:2px solid var(--orange);
+    color:var(--orange);
+    background: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-left: 49px;
+    margin-right: 89px;
+    margin-bottom: 62px;
+    text-align: center;
+    font-family: Urbanist;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 1px;
+    cursor:pointer;
+}  
+
+/*Decorado inferior*/
+.decoracion-img{
+    display: flex;
+    position: absolute;
+}
+
+.mancha{
+    position: absolute;
+    z-index: -1;
+    text-align: start;
+}
+
+.libros{
+    position: absolute;
+    left: 180px;
+    z-index: 1;
+}
+
+/*Estilo mensajes de error en las validaciones del formulario*/
+#nombreError,#apellidoError,#nacimientoError,#mailError,#gradoError{
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color:#FF0060;
+    margin-left: 0px;
+    text-align: left;
+    margin-block-start: -15px;
+}
+
+@media (max-width: 1090px){
+    
+    .both-blocks{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: auto;
+    }
+
+    .block-personal-information{
+        margin-left: 8px;
+        text-align: left;
+        margin-left:15px;
+    }
+    .container{
+        width: 100%;
+    }
+   .buttons{
+        align-content: flex-start;
+        height: 10em;
+        margin-left:-15px
+   }
+   .tittle{
+    margin-left: 12px;
+   }
+
+   .logo-edvisto{
+    padding-left: 0px;
+   }
+
+   .bloque-foto-perfil{
+    margin:auto;
+   }
+}
+@media (max-width: 790px){
+    .block-personal-information{
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 499px){
+    .input-name {
+        width: 20rem;
+}
+    .input-last-name{
+        width: 20rem;
+}
+
+    #mail_usuario{
+        width: 20rem;
+}
+    .input-date{
+        width: 20rem;
+}
+    #country{
+         width: 20rem;
+}
+    #selector-grade{
+        width:20rem;
+}
+    .reset{
+        margin-left: 10px;
+        margin-right: 40px;
+}
+
+@media (max-width: 400px){   
+    
+    .buttons-container{
+        flex-direction: column-reverse;
+        margin-top: 15px;
+    }
+    .reset{
+        margin-left:100px
+    }
+    .submit{
+        margin-left: 88px;
+    }
+    .libros{
+        left:160px;
+    }
+}
+}
